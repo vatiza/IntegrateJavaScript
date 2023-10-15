@@ -37,3 +37,9 @@ for (const sec of sections){
    sec.style.padding='50px'
    sec.style.backgroundColor='yellow';
 }
+
+const education=document.getElementById('edu');
+education.style.backgroundColor='red';
+education.style.borderRadius='10px';
+education.classList.add('text-large');
+education.classList.remove('bd')
