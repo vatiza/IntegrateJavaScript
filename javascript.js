@@ -27,3 +27,13 @@ const setAttribure = document.getElementById('title');
 setAttribure.setAttribute('title', 'this header th');
 const chWel = document.getElementById('welcome');
 chWel.innerHTML='<h5>Hello Bangl</h5>';
+
+
+const sections=document.querySelectorAll('section');
+for (const sec of sections){
+   sec.style.border='2px solid black';
+   sec.style.marginBottom='5px';
+   sec.style.borderRadius='10px'
+   sec.style.padding='50px'
+   sec.style.backgroundColor='yellow';
+}
