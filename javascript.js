@@ -22,24 +22,27 @@
 
 // const someLi=document.querySelectorAll('.country')
 // console.log(someLi)
-const bgcolor = document.getElementById('title').style.textAlign = 'right';
-const setAttribure = document.getElementById('title');
-setAttribure.setAttribute('title', 'this header th');
-const chWel = document.getElementById('welcome');
-chWel.innerHTML='<h5>Hello Bangl</h5>';
+// const bgcolor = document.getElementById('title').style.textAlign = 'right';
+// const setAttribure = document.getElementById('title');
+// setAttribure.setAttribute('title', 'this header th');
+// const chWel = document.getElementById('welcome');
+// chWel.innerHTML='<h5>Hello Bangl</h5>';
 
 
-const sections=document.querySelectorAll('section');
-for (const sec of sections){
-   sec.style.border='2px solid black';
-   sec.style.marginBottom='5px';
-   sec.style.borderRadius='10px'
-   sec.style.padding='50px'
-   sec.style.backgroundColor='yellow';
-}
+// const sections=document.querySelectorAll('section');
+// for (const sec of sections){
+//    sec.style.border='2px solid black';
+//    sec.style.marginBottom='5px';
+//    sec.style.borderRadius='10px'
+//    sec.style.padding='50px'
+//    sec.style.backgroundColor='yellow';
+// }
 
-const education=document.getElementById('edu');
-education.style.backgroundColor='red';
-education.style.borderRadius='10px';
-education.classList.add('text-large');
-education.classList.remove('bd')
+// const education=document.getElementById('edu');
+// education.style.backgroundColor='red';
+// education.style.borderRadius='10px';
+// education.classList.add('text-large');
+// education.classList.remove('bd')
+// console.log(education.childNodes[3].previousSibling)
+
+
