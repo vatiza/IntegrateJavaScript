@@ -9,10 +9,13 @@ const allHeadingTag = document.getElementsByTagName('h1');
 for (const h1 of allHeadingTag) {
     console.log(h1);
 }
-const liName=document.getElementsByTagName('li');
-for (const allLi of liName){
+const liName = document.getElementsByTagName('li');
+for (const allLi of liName) {
     console.log(allLi.innerText)
 }
 
-const getId=document.getElementById('fruits-color')
+const getId = document.getElementById('fruits-color')
 console.log(getId.innerText)
+
+const byClass = document.getElementsByClassName('fruits-name').innerText = 'bananna'
+console.log(byClass.innerText)
