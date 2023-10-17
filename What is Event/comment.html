@@ -10,7 +10,7 @@
 <body>
 
     <h1>Please add Comment</h1>
-    <div>
+    <div id="post-here">
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur delectus quisquam quo? Fugiat ab
             eveniet,
             dolorem autem saepe delectus ipsa veniam minus fuga adipisci a eaque, quisquam facilis quo quis eius earum
@@ -19,7 +19,7 @@
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, maxime in. Fugit dolor assumenda sequi
             inventore ducimus. Iure, consectetur neque.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, itaque?</p>
-        <p id="post-here"></p>
+
     </div>
 
     <div>
@@ -34,8 +34,10 @@
             const getText = TextField.value;
 
             const setText = document.getElementById('post-here');
-            setText.innerText = getText
-            TextField.innerText = '';
+            const newP = document.createElement('p');
+            newP.innerText = getText;
+            setText.appendChild(newP)
+            TextField.value = '';
 
 
 
