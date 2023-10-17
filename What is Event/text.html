@@ -11,10 +11,29 @@
 
     <h1 id="changeText">Bangladesh</h1>
     <section id="addNewUL">
-
     </section>
     <button onclick="addnewElemnet()">Change to Indian</button>
+    <!-- ------------------------ -->
+
+    <h2>What is your name</h2>
+    <input id="input-ans" type="text">
+    <h1>My Name is <span id="show-ans"></span></h1>
+    <button id="show-btn">SHow my name</button>
     <script>
+        // addEventListener
+        document.getElementById('show-btn').addEventListener('click', function () {
+            const getTextFromField = document.getElementById('input-ans');
+            const getText = getTextFromField.value;
+            const setText = document.getElementById('show-ans');
+            setText.innerText = getText;
+
+
+        });
+
+
+
+
+
         function TextChange() {
             const setCountry = document.getElementById('changeText');
             setCountry.innerText = 'India';
