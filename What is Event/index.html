@@ -14,7 +14,17 @@
     <button onclick="document.body.style.backgroundColor='red'">Add Back Yellow</button>
     <br>
     <button onclick="makeYellow()">Click Yellow</button>
+    <br>
+    <br>
+    <button id="alert-btn" style="color: brown;">Click alert Button</button>
+
+
     <script>
+        const noticebtn = document.getElementById('alert-btn');
+        noticebtn.addEventListener('click', function () {
+            console.log('btn worked');
+            alert('btn workd');
+        })
         function makeYellow() {
             console.log('yellow btn worked')
             document.body.style.backgroundColor = 'yellow'
