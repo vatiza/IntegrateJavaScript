@@ -1,1 +1,5 @@
-console.log('dom is connect');
+const callBtn=document.getElementById('call-now');
+callBtn.addEventListener('click',function (){
+
+    alert('Invalid Number')
+})
