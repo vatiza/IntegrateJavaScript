@@ -10,12 +10,24 @@
 <body>
 
     <h1 id="changeText">Bangladesh</h1>
-    <button onclick="TextChange()">Change to Indian</button>
+    <section id="addNewUL">
+
+    </section>
+    <button onclick="addnewElemnet()">Change to Indian</button>
     <script>
         function TextChange() {
             const setCountry = document.getElementById('changeText');
             setCountry.innerText = 'India';
 
+        }
+        function addnewElemnet() {
+            const addnew = document.getElementById('addNewUL');
+            addnew.innerHTML = `
+            <ul>
+                <li>Hello</li>
+                <li>Bangladehs</li>
+                </ul
+            `;
         }
     </script>
 
