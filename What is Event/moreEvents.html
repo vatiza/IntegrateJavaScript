@@ -10,21 +10,26 @@
 <body>
     <h1 id="header">More Events</h1>
     <input id="inputbox" type="text"> <br> <br>
-    <button id="delete-btn" disabled>Delete</button>
+    <button id="delete-btn">Delete</button>
     <script>
-
-        document.getElementById('inputbox').addEventListener('keyup', function (event) {
-            const getText = event.target.value;
-
-            const removeText = document.getElementById('delete-btn');
-            if (getText === 'delete') {
-                removeText.removeAttribute('disabled');
-                const deleteText=document.getElementById('header');
-                deleteText.innerText='';
-            } else {
-                removeText.setAttribute('disabled', ture);
-            }
+        document.getElementById('delete-btn').addEventListener('click', function () {
+            const deleteHeader = document.getElementById('header');
+            deleteHeader.remove;
         })
+
+
+        // document.getElementById('inputbox').addEventListener('keyup', function (event) {
+        //     const getText = event.target.value;
+
+        //     const removeText = document.getElementById('delete-btn');
+        //     if (getText === 'delete') {
+        //         removeText.removeAttribute('disabled');
+        //         const deleteText=document.getElementById('header');
+        //         deleteText.innerText='';
+        //     } else {
+        //         removeText.setAttribute('disabled', ture);
+        //     }
+        // })
 
 
         // document.getElementById('delete-btn').addEventListener('click', function () {
