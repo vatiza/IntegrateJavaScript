@@ -1,23 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>More Events</title>
 </head>
-<body>
-    <h1>More Events</h1>
-<input id="inputbox" type="text">
-    <button id="event-btn">Events</button>
-    
-<script>
-    // document.getElementById('event-btn').addEventListener('mousemove',function(){
 
-    // })
-    document.getElementById('inputbox').addEventListener('keydown',function(event){
-        console.log(event);
-    })
-</script>
+<body>
+    <h1 id="header">More Events</h1>
+    <input id="inputbox" type="text"> <br> <br>
+    <button id="delete-btn" disabled>Delete</button>
+    <script>
+
+        document.getElementById('inputbox').addEventListener('keyup', function (event) {
+            const getText = event.target.value;
+
+            const removeText = document.getElementById('delete-btn');
+            if (getText === 'delete') {
+                removeText.removeAttribute('disabled');
+                const deleteText=document.getElementById('header');
+                deleteText.innerText='';
+            } else {
+                removeText.setAttribute('disabled', ture);
+            }
+        })
+
+
+        // document.getElementById('delete-btn').addEventListener('click', function () {
+        //     const getText = document.getElementById('inputbox');
+        //     const showValue = getText.terget.value;
+        //     console.log(showValue);
+        // })
+
+
+
+
+        // document.getElementById('event-btn').addEventListener('mousemove',function(){
+
+        // })
+        // document.getElementById('inputbox').addEventListener('keydown',function(event){
+        //     console.log(event);
+        // })
+
+
+        // document.getElementById('inputbox').addEventListener('keyup', function (event) {
+        //     console.log(event.target.value
+        //     );
+        // })
+
+    </script>
 
 </body>
+
 </html>
