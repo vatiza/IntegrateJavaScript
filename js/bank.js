@@ -6,9 +6,9 @@ document.getElementById('submit-btn').addEventListener('click', function () {
     const passField = document.getElementById('password');
     const getPass = passField.value;
     if (getEmail === 'mail.com' && getPass === 'admin') {
-        alert('valid user')
+        window.location.href = 'main.html';
     } else {
-        alert('not valid user')
+        alert('invalid user')
     };
 
 })
