@@ -31,8 +31,15 @@ document.getElementById('withdrow-btn').addEventListener('click', () => {
 
     const sumTotalWithDrawAmmount = newWithdrowFieldtoNum + totalWithDrowElementToNumber;
     // console.log(sumTotalWithDrawAmmount);
-   totalWithDrowElement.innerText=sumTotalWithDrawAmmount;
-   newwithdrowField.value='';
+    totalWithDrowElement.innerText = sumTotalWithDrawAmmount;
+
+    const totalBalanceElement = document.getElementById('balance-total');
+    const totalBalanceElementString = totalBalanceElement.innerText;
+    const totalPreviousAmountNum = parseFloat(totalBalanceElementString);
+    const setNewBalance = totalPreviousAmountNum - newWithdrowFieldtoNum;
+    totalBalanceElement.innerText = setNewBalance;
+
+    newwithdrowField.value = '';
 
 
 })
