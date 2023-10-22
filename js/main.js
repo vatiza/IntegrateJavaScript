@@ -1,10 +1,9 @@
+//! deposit btn
 document.getElementById('deposit-btn').addEventListener('click', function () {
     const dFiedAmount = document.getElementById('diposite-field');
     const newDepositAmount_string = dFiedAmount.value;
     const newDepositAmount_num = parseFloat(newDepositAmount_string);
     // console.log(getDepositAmount);
-
-
     const totalDepostiAmount = document.getElementById('setDepositAmount');
 
     const previousDepositAmout_string = totalDepostiAmount.innerText;
@@ -18,7 +17,22 @@ document.getElementById('deposit-btn').addEventListener('click', function () {
 
     const sumTotalBalance = previousTotalAmount_number + newDepositAmount_num;
     totalBalanceAmount.innerText = sumTotalBalance;
-
     dFiedAmount.value = '';
+
+})
+document.getElementById('withdrow-btn').addEventListener('click', () => {
+    const newwithdrowField = document.getElementById('withdrow-field');
+    const newwithdrowFieldString = newwithdrowField.value;
+    const newWithdrowFieldtoNum = parseFloat(newwithdrowFieldString);
+
+    const totalWithDrowElement = document.getElementById('setWithDrawAmount');
+    const totalWithDrowElementString = totalWithDrowElement.innerText;
+    const totalWithDrowElementToNumber = parseFloat(totalWithDrowElementString);
+
+    const sumTotalWithDrawAmmount = newWithdrowFieldtoNum + totalWithDrowElementToNumber;
+    // console.log(sumTotalWithDrawAmmount);
+   totalWithDrowElement.innerText=sumTotalWithDrawAmmount;
+   newwithdrowField.value='';
+
 
 })
