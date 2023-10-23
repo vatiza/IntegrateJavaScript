@@ -2,7 +2,10 @@ document.getElementById('double-btn').addEventListener('click', function () {
     const getNumberFromField = document.getElementById('input-field');
     const getStringNumber = getNumberFromField.value;
     const FieldStringConvetNumber = parseFloat(getStringNumber);
-
+    if (isNaN(FieldStringConvetNumber)) {
+        alert('ENter Number')
+        return;
+    }
 
     const calculateToDouble = FieldStringConvetNumber * 2;
 
@@ -16,7 +19,10 @@ document.getElementById('triple-btn').addEventListener('click', function () {
     const getNumberFromField = document.getElementById('input-field');
     const getStringNumber = getNumberFromField.value;
     const FieldStringConvetNumber = parseFloat(getStringNumber);
-
+    if (isNaN(FieldStringConvetNumber)) {
+        alert('Please input Number')
+        return;
+    }
 
     const calculateToDouble = FieldStringConvetNumber * 3;
 
